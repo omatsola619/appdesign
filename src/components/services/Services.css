@@ -1,0 +1,52 @@
+.services {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.no {
+  color: #294490;
+  font-size: 15px;
+  line-height: 2px;
+}
+.ser {
+  color: #294490;
+  font-size: 2.7rem;
+  font-family: "BemboStd";
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.stack {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.stack .cad {
+  flex: 1;
+  border-radius: 8px;
+  height: 120px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cad:first-child {
+  background-color: #1f3a8b;
+  color: white;
+}
+.cad:nth-child(2) {
+  background-color: #79340f;
+  color: white;
+}
+.cad:nth-child(3) {
+  background-color: #7f1c1c;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .stack {
+    flex-direction: column;
+  }
+  .stack .cad {
+    width: 100%;
+    padding: 50px;
+  }
+}

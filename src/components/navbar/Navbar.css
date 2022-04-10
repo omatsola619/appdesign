@@ -1,0 +1,75 @@
+.navbar {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.navbar .logo img {
+  width: 20px;
+  padding-bottom: 7px;
+}
+.logo-text {
+  font-size: 1.6em;
+  font-family: "BemboStd";
+}
+.navbar nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+nav .item {
+  font-size: 0.8em;
+  font-family: "BemboStd";
+}
+.mobile-nav {
+  display: none;
+}
+.fa-bars,
+.fa-times {
+  cursor: pointer;
+  font-size: 18px;
+}
+.mob-nav {
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  top: 62%;
+  left: 61%;
+}
+.mob-nav .item1:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+.mob-nav .item1 {
+  font-size: 1em;
+  font-family: "BemboStd";
+  padding: 15px;
+}
+@media screen and (max-width: 767px) {
+  .navbar .logo-text {
+    font-size: 1em;
+  }
+  nav .item {
+    font-size: 0.7em;
+    font-family: "BemboStd";
+  }
+  .navbar nav {
+    display: none;
+  }
+  .navbar {
+    margin: 4px 0;
+  }
+  .mobile-nav {
+    display: inline;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}

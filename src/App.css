@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "BemboStd";
+  src: url("./fonts/BemboStd.otf");
+}
+body {
+  overflow-x: hidden;
+}
+.house img {
+  width: 100%;
+}
